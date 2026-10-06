@@ -8271,3 +8271,6 @@ dokkandb.com##+js(trusted-set-local-storage-item, adBlockPromptDismissedAt, $now
 
 ! flixnetwork.is/streamsource.ws bot check
 flickzone.org,sflix.gd##+js(trusted-click-element, button#b, ,100)
+
+! Brave webcompat anti-adblock fix for loanbixby.com — verified via automated A/B testing (Chrome vs Brave Shields on/off): https://loanbixby.com/what-are-the-different-types-of-business-loans
+loanbixby.com##div[id="ljsbvrqndnenityvlmynnqzvdvlatvbukhzmwnkyx_hxvfbqdgpybmvhogxgbbzuurhwnpvrnhruxnhdleq"]:style(display: block !important;)
