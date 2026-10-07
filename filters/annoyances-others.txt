@@ -8271,3 +8271,6 @@ dokkandb.com##+js(trusted-set-local-storage-item, adBlockPromptDismissedAt, $now
 
 ! flixnetwork.is/streamsource.ws bot check
 flickzone.org,sflix.gd##+js(trusted-click-element, button#b, ,100)
+
+! Brave webcompat anti-adblock fix for mitaku.net — verified via automated A/B testing (Chrome vs Brave Shields on/off): https://mitaku.net/
+isekaitube.com##+js(rpnt, script, \"copyRProtection\":true, \"copyRProtection\":false)', 6/9 record, never tried on this domain) is fundamentally different from every failed attempt: it is not cosmetic (no element dedup — the failed keys were 'cosmetic:div[id=…
