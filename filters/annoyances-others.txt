@@ -8271,3 +8271,6 @@ dokkandb.com##+js(trusted-set-local-storage-item, adBlockPromptDismissedAt, $now
 
 ! flixnetwork.is/streamsource.ws bot check
 flickzone.org,sflix.gd##+js(trusted-click-element, button#b, ,100)
+
+! Brave webcompat anti-adblock fix for sorayomu.trogiupnhanh.com — verified via automated A/B testing (Chrome vs Brave Shields on/off): https://sorayomu.trogiupnhanh.com/
+sorayomu.trogiupnhanh.com##.adsbox, .ad-banner, .ad-placement, .adsbygoogle, ins.adsbygoogle:style(display: block !important;)
