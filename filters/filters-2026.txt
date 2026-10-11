@@ -691,6 +691,7 @@ chatgpt.com##+js(trusted-json-edit, ..suppress_ads=true)
 chatgpt.com##+js(json-prune, messages.*.ads messages.*.renderedAdsHtml)
 chatgpt.com##+js(trusted-replace-outbound-text, TextDecoder.prototype.decode, /<template data-assistant-ads-html=""><aside aria-label.+?<\/aside><\/template>/)
 chatgpt.com##+js(trusted-replace-outbound-text, TextDecoder.prototype.decode, /<template for="conversation-partial-control" data-web-mobile-dpu-apply="append"><span( hidden)? data-conversation-control="assistant-ads".+?<\/(aside|div)><\/template><\/span><\/template>/)
+chatgpt.com##+js(trusted-replace-outbound-text, TextDecoder.prototype.decode, '"type":"ads","visibility":{"status":"allowed"', '"type":"ads","visibility":{"status":"hidden"')
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32235
 ourcoincash.xyz,softdevelopp.com##+js(noeval-if, Adblock)
@@ -1853,8 +1854,9 @@ temp-mail.africa##+js(rmnt, script, /detect/i)
 @@||vidzer.me/stream?$ghide
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34464
-v2ex.com##ins.adsbygoogle[data-ad-client]
-v2ex.com##ins.adsbygoogle[data-ad-slot]
+! https://github.com/uBlockOrigin/uAssets/issues/34809
+fmkorea.com,v2ex.com##ins.adsbygoogle[data-ad-client]
+fmkorea.com,v2ex.com##ins.adsbygoogle[data-ad-slot]
 
 ! https://community.brave.app/t/https-hianimed-de-now-with-added-pop-ups/657950
 aniwixi.xyz##body > [style^="position: fixed; top: 0; left: 0;"][style*="z-index: 999999;"][target="_blank"]
@@ -2034,3 +2036,10 @@ boomlify.com##+js(set-local-storage-item, boomlify-banner-store, $remove$)
 gowatchseries.net##+js(nostif, /bait|AdBlock/i)
 gowatchseries.net##+js(nowoif, _blank)
 gowatchseries.net###gw-ad-root
+
+! https://github.com/uBlockOrigin/uAssets/issues/32952#issuecomment-6093288949
+sudinfo.be##.pane-partenaires-outbrain-sidebar
+
+! https://github.com/uBlockOrigin/uAssets/issues/34816
+partner.nonamejose.sx##+js(set-local-storage-item, removeAdv, true)
+partner.nonamejose.sx##+js(nostif, , 15000)
