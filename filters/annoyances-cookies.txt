@@ -5780,3 +5780,6 @@ infopannes.solutions.hydroquebec.com##+js(trusted-set-local-storage-item, VERSIO
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34736
 automicgold.com##+js(trusted-set-cookie, cookieyes-consent, consentid:0\,consent:yes\,action:yes\,necessary:yes\,functional:yes\,analytics:no\,performance:yes\,advertisement:no\,other:no)
+
+! Brave webcompat cookie-notice fix for comed.com — verified by replaying a WebPageReplay recording of the page with the rule applied: https://www.comed.com
+comed.com##+js(trusted-set-local-storage-item, tcmConsent, '{"purposes":{"Functional":false,"Analytics":false,"Advertising":false,"SaleOfInfo":"Auto"},"timestamp":"$currentISODate$","confirmed":true,"prompted":true,"updated":true}')
