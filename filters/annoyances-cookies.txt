@@ -5781,3 +5781,6 @@ infopannes.solutions.hydroquebec.com##+js(trusted-set-local-storage-item, VERSIO
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34736
 automicgold.com##+js(trusted-set-cookie, cookieyes-consent, consentid:0\,consent:yes\,action:yes\,necessary:yes\,functional:yes\,analytics:no\,performance:yes\,advertisement:no\,other:no)
+
+! Brave webcompat cookie-notice fix for uniaverso.com — verified by replaying a WebPageReplay recording of the page with the rule applied: https://www.uniaverso.com
+uniaverso.com##+js(set-local-storage-item, uniaverso.cookies, denied)
