@@ -4595,7 +4595,7 @@ neurotray.com##+js(nano-stb, /EzoIvent|TDELAY/, 5000)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/12214 - Video breakage
 ! https://github.com/uBlockOrigin/uAssets/issues/24754
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima.js:5,domain=abczdrowie.pl|animezone.pl|chillizet.pl|claudia.pl|echirurgia.pl|elevensports.pl|elle.pl|elleman.pl|fm.tuba.pl|focusnauka.pl|games.cdn.famobi.com|glamour.pl|grydladzieci.pl|ipla.tv|ipla.tv|kobieta.pl|meloradio.pl|mojegotowanie.pl|mojpieknyogrod.pl|money.pl|national-geographic.pl|parenting.pl|partner.redefine.pl|playpuls.pl|pluscdn.pl|polsatgo.pl|polsatnews.pl|polsatsport.pl|przyslijprzepis.pl|radioplus.pl|sadeczanin.info|tvokazje.pl|tvp.pl|twojapogoda.pl|video.onnetwork.tv|videotarget.pl|wp.pl|wtk.pl|interia.pl|www.polsatnews.pl|autocentrum.pl|~wiadomosci.wp.pl
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,redirect=google-ima.js:5,domain=animezone.pl|chillizet.pl|claudia.pl|echirurgia.pl|elevensports.pl|elle.pl|elleman.pl|fm.tuba.pl|focusnauka.pl|games.cdn.famobi.com|glamour.pl|grydladzieci.pl|ipla.tv|ipla.tv|kobieta.pl|meloradio.pl|mojegotowanie.pl|mojpieknyogrod.pl|national-geographic.pl|partner.redefine.pl|playpuls.pl|pluscdn.pl|polsatgo.pl|polsatnews.pl|polsatsport.pl|przyslijprzepis.pl|radioplus.pl|sadeczanin.info|tvokazje.pl|tvp.pl|twojapogoda.pl|video.onnetwork.tv|videotarget.pl|wtk.pl|interia.pl|www.polsatnews.pl
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/16gwdpd/virgin_media_player_not_visible_with_ublock/
 virginmediatelevision.ie##+js(set, google.ima.dai, {})
@@ -5930,9 +5930,6 @@ temperatur.nu#@#.holidAds:upward(1)
 ! https://github.com/uBlockOrigin/uAssets/discussions/32384
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=fastcompany.com,redirect=google-ima.js,important
 
-! https://github.com/uBlockOrigin/uAssets/issues/32074
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,3p,redirect-rule,from=webmd.com
-
 ! https://github.com/uBlockOrigin/uAssets/issues/32196
 ||ruamupr.com^$script,redirect=noopjs,domain=thegatewaypundit.com
 thegatewaypundit.com##+js(rmnt, script, Object.getOwnPropertyDescriptor(Document.prototype)
@@ -6079,3 +6076,21 @@ expatexplorer.hsbc.com##+js(trusted-set, HSBC, 'json:{"SITE":{},"DCS":{},"PAGE":
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34837
 www.bankofamerica.com##+js(no-fetch-if, smetrics.bankofamerica.com)
+
+! https://github.com/uBlockOrigin/uAssets/issues/34906
+||transcend-cdn.com/cm/*/airgap.js$domain=northeast.aaa.com
+@@||assets.adobedtm.com/*/satelliteLib-$script,domain=northeast.aaa.com
+@@||assets.adobedtm.com/*-source.min.js$script,domain=northeast.aaa.com
+northeast.aaa.com##+js(set, _uxa, {})
+northeast.aaa.com##+js(set, _uxa.push, noopFunc)
+
+! https://github.com/uBlockOrigin/uAssets/issues/34937
+roaringapps.com##+js(set, Sentry, {})
+roaringapps.com##+js(set, Sentry.onLoad, noopFunc)
+
+! https://github.com/uBlockOrigin/uAssets/issues/34997
+funradio.fr##+js(trusted-replace-outbound-text, String.prototype.trim, /^STOP_GTM_WARNING$/, IMA_ADS)
+funradio.fr##+js(trusted-set, getUserConsentStatus, json:{"dailymotion":true}, as, function)
+
+! https://github.com/uBlockOrigin/uAssets/issues/34996
+@@||speedcubeshop.com/cdn/shopifycloud/consent-tracking-api/v*/consent-tracking-api.js$1p

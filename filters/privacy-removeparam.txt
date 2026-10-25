@@ -520,6 +520,14 @@ $to=~tradedoubler.com,removeparam=tduid
 ! Bad: ||example.org^$xmlhttprequest,redirect=noopvast-3.0 (for instance, should be in specific.txt)
 !
 !
+! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-18913186
+||wayground.com^$removeparam=source
+! https://github.com/AdguardTeam/AdguardFilters/issues/243890
+||bfmtv.com^$removeparam=at_brand
+||bfmtv.com^$removeparam=at_compte
+||bfmtv.com^$removeparam=at_plateforme
+! https://github.com/AdguardTeam/AdguardFilters/issues/244026
+||elcomercio.es^$removeparam=mrfcid
 ! https://github.com/AdguardTeam/AdguardFilters/issues/243658
 ||sp.mbga.jp^$removeparam=_from
 ||sp.mbga.jp^$removeparam=_fr
@@ -3650,6 +3658,8 @@ $removeparam=ns_linkname,domain=bbc.com|bbc.co.uk
 $removeparam=ns_fee,domain=bbc.com|bbc.co.uk
 ! insider.office.com
 ||office.com^$removeparam=ocid
+! https://github.com/AdguardTeam/AdguardFilters/issues/244936
+||business.x.com^$removeparam=ref
 ! Embedded tweets
 $removeparam=refsrc,domain=twitter.com|x.com
 $removeparam=ref_src,domain=twitter.com|x.com

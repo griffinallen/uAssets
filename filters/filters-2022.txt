@@ -2530,7 +2530,10 @@ listatv.pl##ins.adsbygoogle
 monstream.org##+js(aopr, BetterJsPop)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/14764
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima.js:5,domain=novelgames.com
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=novelgames.com
+! https://github.com/uBlockOrigin/uAssets/issues/34855
+novelgames.com##+js(trusted-json-edit-fetch-response, .adShowPreload=false, propsToMatch, /getPreloaderInfo)
+novelgames.com##+js(trusted-json-edit-fetch-response, .adShowAfterGame=false, propsToMatch, /getPreloaderInfo)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/14766
 mangacrab.com##+js(nostif, , 500)
@@ -2662,9 +2665,6 @@ cloudcomputingtopics.net##+js(set, distance, 0)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/150990
 null-scripts.net,nullscripts.net##+js(nostif, show)
 @@||nullscripts.net^$ghide
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/130051
-video-to-mp3-converter.com##+js(nowoif, !/^\//)
 
 ! seriesmetro. net popups
 seriesmetro.net##+js(aopr, afStorage)

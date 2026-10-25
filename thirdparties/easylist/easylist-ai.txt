@@ -84,6 +84,7 @@ sciencedirect.com##._pendo-guide-walkthrough_
 mail.yahoo.com##.ab_CI.en_0.eo_x.D_F:has([aria-label="Summarize with Yahoo Scout"])
 britannica.com##.ai-ask-button
 dictionary.cambridge.org##.ai-bar-button
+gridinsoft.com##.ai-chat-widget
 baidu.com##.ai-create-wrapper_2oI56
 androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers.com,fextralife.com,footballfancast.com,footballleagueworld.co.uk,gamerant.com,givemesport.com,hotcars.com,makeuseof.com,movieweb.com,pocket-lint.com,screenrant.com,simpleflying.com,thegamer.com,therichest.com,thesportster.com,thethings.com,thetravel.com,topspeed.com,xda-developers.com##.ai-features
 dictionary.cambridge.org##.ai-header-button
@@ -168,6 +169,7 @@ huntress.com##.summarize-ai
 mathrubhumi.com##.summary-wrapper
 tecnoblog.net##.tb-single-tecnochat
 techedt.com##.teqr-quick-read
+psref.lenovo.com##.text-selection-ai-icon
 britannica.com##.toc-sticky-header-ai-container
 animeidhentai.com##.topbar-ai
 walmart.com##.unified-chat-component
@@ -202,6 +204,7 @@ www.yahoo.co.jp##a.yMWCYupQNdgppL-NV6sMi._3sAlKGsIBCxTUbNi86oSjt:has(svg[aria-la
 www.yahoo.co.jp##a.ygDfdPUPK5OPiqKG4UtuU[aria-label="AIアシスタントで検索"]
 duckduckgo.com##a[class][href*="ia=chat"]
 truthsocial.com##a[href="/ai-search"]
+gitlab.com##a[href="/dashboard/orbit"]
 duckduckgo.com##a[href^="/?ia=chat&"]
 search.brave.com##a[href^="/ask?q="]
 bing.com##a[href^="/chat?FORM=hpcodx"]
@@ -278,10 +281,12 @@ www.youtube.com##ytd-talk-to-recs-flow-renderer
 ||booosted.com^$third-party
 ||callnowbutton.com^$third-party
 ||cdn.gist.ai^$third-party
+||cdn.spiffy.ai^$third-party
 ||cdn.whoop.com/v0/chat/chat.js$domain=support.whoop.com
 ||chat.cdn-plain.com^
 ||chat.g4media.org^
 ||embed.chatnode.ai^
+||embed.vaile.ai/chat-widget-magic.iife.js
 ||engagelab.com^$third-party
 ||gotolstoy.com^$third-party
 ||klipy.atlassian.net/csm/widget/$domain=klipy.com
