@@ -5802,3 +5802,6 @@ jysk.no##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, , , domai
 
 ! https://github.com/uBlockOrigin/uAssets/issues/27656#issuecomment-6371556430
 edition.cnn.com##+js(trusted-click-element, when-visible:button#onetrust-reject-all-handler)
+
+! Brave webcompat cookie-notice fix for meine.onleihe.de — verified by replaying a WebPageReplay recording of the page with the rule applied: https://meine.onleihe.de
+meine.onleihe.de##+js(set-local-storage-item, cookieState, 2)
