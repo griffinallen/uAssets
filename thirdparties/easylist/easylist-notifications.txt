@@ -296,7 +296,6 @@
 ##.push-subscription-prompt
 ##.push-subscription-wrapper
 ##.push-wrap:not(body):not(html)
-##.push-wrapper:not(body):not(html)
 ##.pushNotWrap
 ##.pushNotification
 ##.push_back
@@ -508,6 +507,7 @@
 ||pushprofit.ru^$third-party
 ||pushprospush.com^$third-party
 ||pushpushgo.com^$third-party
+||pushsage.com^$third-party
 ||pushstack.it^$third-party
 ||pushtide.com^$third-party
 ||pushvip.ru^$third-party
@@ -964,6 +964,7 @@ deepl.com###dl_app_banner_popup
 m.economictimes.com###downloadApp
 map.baidu.com###downloadnativepopupUlink
 economictimes.indiatimes.com###float_app_ET
+tokubai.co.jp###float_web2app_smart_phone_wrapper
 codeur.com###follow-modal
 kogan.com###footer-native-banner
 clubd.co.jp###footerBanner
@@ -1001,6 +1002,7 @@ livemint.com###openInApp
 geeksforgeeks.org###openInApp-modal
 timesnownews.com###openin-app
 playbite.com###pb-cta
+zeta-ai.io###portal-container.fixed.z-\[70\]
 linkedin.com###protip-capsule
 qlover.jp###root > .jss128[style=""]
 cookpad.com###ru-promotion-banner
@@ -1145,6 +1147,7 @@ cricbuzz.com##.cbz-leaderboard-banner
 apkpure.com,apkpure.net##.chrome-install-pop
 clayandbuck.com##.cnb-download-app-at-mobile
 coinpaprika.com##.coins-mobile-banner
+www.reddit.com##.configured-xpromo-bottom-sheet
 kijiji.ca##.container-3757608091
 cbsnews.com##.content__cta
 gumtree.com.au##.continueInApp__container
@@ -1232,6 +1235,7 @@ duckduckgo.com##.js-open-in-app
 adspecials.us,ajanlatok.hu,akcniletak.cz,catalogosofertas.cl,catalogosofertas.com.ar,catalogosofertas.com.br,catalogosofertas.com.co,catalogosofertas.com.ec,catalogosofertas.com.mx,catalogosofertas.com.pe,catalogueoffers.co.uk,catalogueoffers.com.au,flugblattangebote.at,flyerdeals.ca,folderz.nl,folhetospromocionais.com,folletosofertas.es,gazetki.pl,kundeavisogtilbud.no,ofertelecatalog.ro,offertevolantini.it,promocatalogues.fr,promotiez.be,promotions.ae,prospektangebote.de,reklambladerbjudanden.se,tilbudsaviseronline.dk##.js-page-promotion-container
 my.mintmobile.com##.justify-content-end.rounded-1.g-0.p-3
 news.bitcoin.com##.kBQmzn.sc-gMKojc
+leicester.news##.kg-cta-content-app
 baby-calendar.jp##.l-anime-bana.js-bcweb-only
 soundcloud.com##.l-front-mobile-teaser
 sauna-ikitai.com##.l-headerApp
@@ -1269,6 +1273,7 @@ airtelkenya.com##.modal-content-popup
 speedtest.net##.modal-overlay
 moovitapp.com##.moovit-banner
 m.bilibili.com##.mplayer-widescreen-callapp
+motitown.com##.mt-sticky
 google.*##.nWi0wf.kDTz5c
 audacy.com##.national-footer__app-stores
 skynews.com.au##.nca-et-rendered
@@ -1322,6 +1327,7 @@ chess.com##.ready-to-play-banner-component
 agoda.com##.redirectToAppBar
 medscape.com##.rel-links-media
 speedtest.net##.result-area-ad
+sfgate.com##.row1:has([aria-label="Get our ad-free app"])
 rekhta.org##.rt_AppBtn
 geekdashboard.com##.section--download
 fdownload.app##.section-app-fb
@@ -1435,11 +1441,13 @@ delta.com##idp-dynamic-banner
 google.*##mobile-promo
 m.yelp.*##section:has([data-testid="pitch-link"])
 reddit.com##shreddit-experience-tree[active-experiences*="app_selector"]
+sixt.*#?#.jyjDHO:has-text(SIXT App)
 weatherbug.com##smart-app-banner
 fedex.com##trk-shared-smart-app-banner
 voicy.jp##v-sp-download
 msn.com##views-chrome-extension
 msn.com##views-promo-card
+wnky.com#?#.vc_btn3-center:has-text(Download)
 reddit.com##xpromo-app-selector
 reddit.com##xpromo-top-button
 ! :has
@@ -1840,7 +1848,6 @@ otvet.mail.ru#@#.js-notifications-button
 mega.nz#@#.notification-button
 joinhandshake.com,online.rsb.ru#@#.notifications-wrapper
 asbclassic.co.nz,envirowaste.co.nz,harmoney.co.nz,harmoney.com.au,mstream.io,rocketlabusa.com,underconsideration.com#@#.push-wrap:not(body):not(html)
-arabbank.com.au,color4care.co.uk,color4care.dk,color4care.fi,color4care.no,operon.pl,vardvaskan.se#@#.push-wrapper:not(body):not(html)
 openstreetmap.org,rescuetime.com#@#.web-notification
 ! Mobile notifications
 safeway.ca#@#.mobile-app-banner

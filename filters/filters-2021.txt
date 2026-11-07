@@ -1196,7 +1196,7 @@ files.fm##+js(aopr, canRunAds)
 app.plex.tv##+js(json-prune, MediaContainer.Metadata.[].Ad)
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fwizi0/plex_free_tvmovies_ad_block/
 !#if env_firefox
-imasdk.googleapis.com##+js(no-xhr-if, vod.provider.plex.tv/ad?, war:noop-vast3.xml)
+imasdk.googleapis.com##+js(trusted-prevent-xhr, vod.provider.plex.tv/ad?, <VAST version="3.0"></VAST>)
 !#else
 ||vod.provider.plex.tv/ad?$xhr,redirect=noopvast-3.0
 !#endif
@@ -2569,15 +2569,6 @@ ear-phone-review.com##+js(nostif, nextFunction)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/9844
 switch520.com##+js(acs, eval, replace)
-
-! https://github.com/uBlockOrigin/uAssets/issues/9843
-||4u2movie.com^$3p,media,redirect=noopmp3-0.1s
-embed.nana2play.com##.click_block
-embed.nana2play.com##+js(nostif, debugger)
-embed.nana2play.com##+js(nano-stb, load_ads)
-||googles.video^
-||ad.mail.ru^$3p
-
 ! https://github.com/uBlockOrigin/uAssets/issues/10454
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117364
 ask4movie.*##+js(aopr, AaDetector)

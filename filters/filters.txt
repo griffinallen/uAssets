@@ -80,7 +80,7 @@ tvtoday.de##+js(nosiif, fireEvent, 500)
 ! https://forums.lanik.us/viewtopic.php?p=129561#p129561
 @@||a.bf-ad.net/makabo/ads_fol_init.js$script,domain=chip.de
 ! https://github.com/uBlockOrigin/uAssets/issues/6587
-chip.de##.DownloadPageWidget-Cta > .RUC-DownloadButton-Wrap:has(> div > a.aff-link[href*="&deliver=installer&from=dl_button"])
+chip.de##.DownloadPageWidget-Cta:has(a[data-qa-download-page-manual-install-link]) > .RUC-DownloadButton-Wrap
 ! https://github.com/uBlockOrigin/uAssets/issues/7589
 chip.de##+js(json-prune, enabled, force_disabled)
 
@@ -322,13 +322,10 @@ web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.
 ! https://www.facebook.com/marketplace/
 ! https://www.facebook.com/watch/
 !#if cap_html_filtering
-||facebook.com/api/graphql/$xhr,replace=/\{"node":\{"role":"SEARCH_ADS"[^\n]+?cursor":[^}]+\}/{}/g,domain=web.facebook.com|www.facebook.com
-||facebook.com/api/graphql/$xhr,replace=/\{"node":\{"__typename":"MarketplaceFeedAdStory"[^\n]+?"cursor":(?:null|"\{[^\n]+?\}"|[^\n]+?MarketplaceSearchFeedStoriesEdge")\}/{}/g,domain=web.facebook.com|www.facebook.com
-||facebook.com/api/graphql/$xhr,replace=/\{"node":\{"__typename":"VideoHomeFeedUnitSectionComponent"[^\n]+?"sponsored_data":\{"ad_id"[^\n]+?"cursor":null\}/{}/,domain=web.facebook.com|www.facebook.com
-||static.xx.fbcdn.net/rsrc.php/v*.js$script,replace=/"__typename":"SponsoredData"/"__typename":"SponsorData"/g
-||static.xx.fbcdn.net/rsrc.php/v*.js$script,replace=/return [a-zA-Z]\(JSON\.parse\([a-z]\)\)/return false/
+||static.xx.fbcdn.net/rsrc.php/v*.js$script,replace=/return [a-zA-Z]\(JSON\.parse\([a-z]\(?\)?\)\)/return false/
 ||static.xx.fbcdn.net/rsrc.php/v*.js$script,replace=/var n=s\(t\.call\(JSON\.parse\)\),/return false;var n=s(t.call(JSON.parse)),/
 ||static.xx.fbcdn.net/rsrc.php/v*.js$script,replace=/=document\.body\|\|document\.documentElement;/=document.body||document.documentElement;return false;/
+web.facebook.com,www.facebook.com##+js(json-edit, ..node[?.*.__typename=="SponsoredData"], matches, '/^.{1000,}/')
 !#else
 web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, /\{"node":\{"role":"SEARCH_ADS"[^\n]+?cursor":[^}]+\}/g, {}, /api/graphql)
 web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, /\{"node":\{"__typename":"MarketplaceFeedAdStory"[^\n]+?"cursor":(?:null|"\{[^\n]+?\}"|[^\n]+?MarketplaceSearchFeedStoriesEdge")\}/g, {}, /api/graphql)
@@ -344,7 +341,7 @@ web.facebook.com,www.facebook.com###seo_pivots ~ div > div[style^="max-width"] >
 ! https://www.reddit.com/r/uBlockOrigin/comments/1e4e9c1/fb_video_ads_is_getting_way_out_of_hand/ldel4vi/
 web.facebook.com,www.facebook.com##+js(json-prune-xhr-response, data.viewer.instream_video_ads data.scrubber, , propsToMatch, /api/graphql)
 ! https://github.com/uBlockOrigin/uAssets/issues/3367#issuecomment-3064485056
-web.facebook.com,www.facebook.com##+js(json-edit, ..node[?.__typename=="MarketplaceFeedAdStory"])
+web.facebook.com,www.facebook.com##+js(json-edit, ..node[?.__typename=="MarketplaceFeedAdStory"], matches, MarketplaceFeedAdStory)
 web.facebook.com,www.facebook.com##+js(jsonl-edit-xhr-response, ..node[?.__typename=="MarketplaceFeedAdStory"], propsToMatch, /graphql)
 web.facebook.com,www.facebook.com##:matches-path(/marketplace) div[role="main"] div[style^="--x-maxInlineSize:"] a[attributionsrc^="/privacy_sandbox/comet/register/source/?xt="]
 web.facebook.com,www.facebook.com##:matches-path(/marketplace/item) a[attributionsrc^="/privacy_sandbox/"]:is([aria-label$=" anunciante"][aria-label*=" d"],[aria-label="Lien de l’annonceur"],[aria-label$="autan pengiklan"],[aria-label="Adverteerderskakel"],[aria-label="Link sa nag-advertise"],[aria-label="Link oglašivača"],[aria-label="Odkaz od inzerenta"],[aria-label="Link fra annoncør"],[aria-label="Werbelink"],[aria-label="Link ng advertiser"],[aria-label="Link dell'inserzionista"],[aria-label="Veza oglašivača"],[aria-label="Manisautilirijimut kasurvik"],[aria-label="Kiunganishi cha mtangazaji"],[aria-label="Lyen konpayi ki fè piblisite a"],[aria-label="Reklāmdevēja saite"],[aria-label="Reklamuotojo nuoroda"],[aria-label="Hirdető hivatkozása"],[aria-label="Link tar-reklamatur"],[aria-label="Adverteerderslink"],[aria-label="Annonsørlenke"],[aria-label="Link reklamodawcy"],[aria-label="Link promotor"],[aria-label="Lidhja e reklamuesit"],[aria-label="Odkaz na inzerenta"],[aria-label="Povezava oglaševalca"],[aria-label="Mainostajan linkki"],[aria-label="Annonsörlänk"],[aria-label="Liên kết của nhà quảng cáo"],[aria-label="Reklamveren bağlantısı"],[aria-label="Σύνδεσμος διαφημιζόμενου"],[aria-label="Връзка на рекламодател"],[aria-label="Линк на огласувач на реклами"],[aria-label="Сурталчлагчийн холбоос"],[aria-label="Ссылка рекламодателя"],[aria-label="Веза оглашивача"],[aria-label="Посилання рекламодавця"],[aria-label="რეკლამის განმთავსებლის ბმული"],[aria-label="קישור של מפרסם"],[aria-label="ایڈورٹائزر کا لنک"],[aria-label="رابط المعلن"],[aria-label="जाहिरातदार लिंक"],[aria-label="विज्ञापनदाता द्वारा लिंक"],[aria-label="বিজ্ঞাপনদাতা লিংক"],[aria-label="বিজ্ঞাপনদাতার লিঙ্ক"],[aria-label="જાહેરાતકર્તા લિંક"],[aria-label="అడ్వర్టయిజర్ లింక్"],[aria-label="പരസ്യദാതാവിന്റെ ലിങ്ക്"],[aria-label="වෙළඳ ප්‍රචාරක සබැඳිය"],[aria-label="ลิงก์ผู้ลงโฆษณา"],[aria-label="광고주 링크"],[aria-label^="廣告"][aria-label$="連結"],[aria-label="广告主提供的链接"],[aria-label="広告主によるリンク"])
@@ -924,7 +921,6 @@ animepahe.*,kwik.*##^script:has-text(\'shift\')
 animepahe.*,kwik.*##+js(acs, String.fromCharCode, 'shift')
 animepahe.*,kwik.*##+js(aopr, open)
 animepahe.*,kwik.*##+js(aopr, PopAds)
-pahe.*##+js(rmnt, script, Reflect)
 pahe.*##+js(nowoif)
 @@||kwik.*^$script,1p
 ! https://forums.lanik.us/viewtopic.php?f=62&t=44940 pahe .in / .ph
@@ -6543,7 +6539,7 @@ duden.de##.tabloid__side-column
 duden.de##body:style(margin-top: 0px !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/25788
 @@||duden.de^$ghide
-duden.de##+js(aeld, , /adsbygoogle|initDetection/)
+duden.de##+js(trusted-prevent-fetch, googlesyndication.com/pagead/js/adsbygoogle.js, length:20000, {"headers":{"content-type":"text/javascript; charset=UTF-8"}})
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/bhr1sj/adblocker_detected/
 faresgame.com##+js(aopr, adBlockDetected)
@@ -7046,45 +7042,6 @@ dreamdth.com##+js(aopw, wutimeBotPattern)
 ! https://www.reddit.com/r/uBlockOrigin/comments/8lmjam/please_help_me_bypass_the_adblock_detection_on/
 dreamdth.com##+js(set, adBlockDetected, false)
 dreamdth.com##+js(acs, $, show)
-
-! https://github.com/uBlockOrigin/uAssets/issues/5799
-! https://github.com/uBlockOrigin/uAssets/issues/18375
-pornhub.*##+js(nostif, adsbytrafficjunkycontext)
-pornhub.*##+js(acs, Object.defineProperty, trafficjunky)
-pornhub.*##+js(nowoif, ads)
-pornhub.*##.uploadBtnContentSpicevids
-pornhub.*##.js-becomeUviuFanBtn
-pornhub.*##a[href^="https://www.uviu.com"]
-pornhub.*##.livesex
-pornhub.*##a[href^="https://landing.spicevids.com"]
-pornhub.*##[data-event="header_paid_tabs"]
-pornhub.*##.joinNowCPPBtn
-pornhub.*##.js_joinNowCPPBtn
-pornhub.*##.mgp_overlayContainer
-||phncdn.com/pics/promobanners/
-pornhub.*##.js-adsRemoveButton
-pornhub.*##.noBottom
-pornhub.*##.ad-tabSplit
-pornhub.*##.watchpageAd
-pornhub.*###mobileContainer > div:not([id]):has(> .watchpageAd)
-pornhub.*##.middleAdContainer
-pornhub.*##.js-becomeFancentroFanBtn
-! https://github.com/uBlockOrigin/uAssets/issues/5799#issuecomment-599266182
-pornhub.*##.video-wrapper > #player ~ .hd.clear
-pornhub.*##.sniperModeEngaged
-pornhub.*##a[href^="http://ads.trafficjunky.net/"]
-pornhub.*##.realsex
-pornhub.*###pb_block
-pornhub.*##.menuLinkDiv:has(a[href^="https://www.spicevids.com/"])
-pornhub.*##div.halfWidth.menuLink:has(a[href^="https://fancentro.com/"])
-pornhub.*##a[href^="https://fancentro.com"]
-pornhub.*##.emptyBlockSpace
-! https://github.com/uBlockOrigin/uAssets/issues/11753
-pornhub.*##+js(set, page_params.holiday_promo, true)
-! https://github.com/AdguardTeam/AdguardFilters/issues/132379
-pornhub.*###relatedVideosCenter > .wrapVideoBlock
-! https://github.com/AdguardTeam/AdguardFilters/issues/146564
-pornhub.*##+js(set, abp1, 1)
 
 ! https://github.com/NanoMeow/QuickReports/issues/1368
 @@||stltoday.com^$ghide
@@ -8816,11 +8773,7 @@ player.rtl2.de##+js(set, getHomadConfig, noopFunc)
 ! https://www.ligainsider.de/ welect.de iFrame inside cookie banner
 ||damoh.welect.de^
 ! https://github.com/uBlockOrigin/uAssets/issues/32740
-!#if ext_ubol
 welt.de##+js(trusted-prevent-fetch, aud.springserve.com, <VAST version="3.0"></VAST>)
-!#else
-welt.de##+js(no-fetch-if, aud.springserve.com, war:noop-vast3.xml)
-!#endif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/7508#issuecomment-659267224
 ||damoh.gmx.*/*$media,redirect=noop-0.1s.mp3,1p
@@ -9855,10 +9808,6 @@ oceanof-games.com##+js(aopr, open)
 
 ! https://github.com/NanoMeow/QuickReports/issues/2973
 @@||insideedition.com^$ghide
-
-! https://github.com/NanoMeow/QuickReports/issues/2974
-hobby-machinist.com##+js(nostif, show)
-hobby-machinist.com##.samCodeUnit
 
 ! https://github.com/NanoMeow/QuickReports/issues/2975
 jacquieetmichelelite.com##+js(acs, $, show)

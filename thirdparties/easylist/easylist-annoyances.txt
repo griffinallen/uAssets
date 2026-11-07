@@ -424,7 +424,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ###gkBackToTop
 ###gkTopLink
 ###go-to-bottom
-###go-to-top
 ###goDownFooter
 ###goToTop
 ###goToTopButton
@@ -712,7 +711,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ##.go-to-top-button
 ##.go-to-top-desktop
 ##.go-to-top-page
-##.go-top
 ##.go-top-button
 ##.go-top-footer-btn
 ##.go-top-wrapper
@@ -806,6 +804,7 @@ dashboard.razorpay.com#@##credential_picker_container
 ##.oui-back-to-top
 ##.p-pagetop-btn
 ##.page-to-top-visible
+##.pageActionButtonToTop
 ##.pagetop-btn
 ##.pb-back-to-top
 ##.penci-go-to-top-floating
@@ -1083,6 +1082,7 @@ dashboard.razorpay.com#@##credential_picker_container
 ||foursixty.com^$third-party
 ||freetellafriend.com^$third-party
 ||frizbit.com^$third-party
+||fundraiseup.com^$third-party
 ||fwix.com^$third-party
 ||gameball.co^$third-party
 ||gatherup.com^$third-party
@@ -2501,6 +2501,7 @@ thenationalpulse.com##.pulse__ad-wrapper
 thenationalpulse.com##.pulse_poster
 ess-news.com,pv-magazine.com##.pvmagazine-announcement-block
 metager.org##.quicktip[type="spendenaufruf"]
+designboom.com##.rail--sticky
 advocate.com##.reader-revenue
 abovethelaw.com##.recent-jobs-widget
 4kdownload.com##.recommend
@@ -2671,6 +2672,7 @@ reason.com##.webathon-meter
 reason.com##.webathon-meter-widget
 thehackernews.com##.webinar-con
 themarshallproject.org##.welcome-mat
+washingtonexaminer.com##.wex-ad-wrap
 thurrott.com##.widget > [href="https://www.thurrott.com/thurrott-premium"]
 nationalpost.com##.widget--local-ads
 cpuid.com##.widget-advert-300-sticky
@@ -2738,6 +2740,7 @@ techdirt.com##[style="width: 300px; height: 360px;"]
 fire.org,montanafreepress.org,peoplefor.org##[title="Persistent Donate Button"]
 peoplefor.org##[title="Popup"]
 psypost.org##[width="300"]
+votes.decisiondeskhq.com##a[aria-label="Upgrade to DDHQ Pro"]
 xhaccess.com,xhamster.com,xhamster.desi##a[class*="promoMessageBanner-"]
 tech-camp.in##a[data-gtm-tcb="TCB_CLICK_scrollbanner_default_exp_income"]
 tech-camp.in##a[data-gtm-tcb^="TCB_CLICK_buntyubanner_"]
@@ -2792,6 +2795,7 @@ twitch.tv#?#.player-overlay-background:has-text(Consider Turbo)
 undark.org#?#.trigger-in-view:has-text(Support Undark Magazine)
 united24media.com#?#.c-prose__ignore:has-text(Every article pushes)
 united24media.com#?#.z-modal.border-white:has-text(Support)
+votes.decisiondeskhq.com#?#.z-9999:has-text(free account)
 washingtonmonthly.com#?#.wp-block-group__inner-container:has-text(Support the Washington Monthly)
 weather.com#?#.min-h-12:has-text(Sign in to see fewer ads)
 wired.com#?#.table-container:has-text(Got a Tip?)
@@ -2801,9 +2805,9 @@ yalereview.org#?#.lg\:border-b-2:has-text(Support Our Commitment to Print)
 chromewebstore.google.com##[role="dialog"][aria-labelledby="promo-header"]
 chromewebstore.google.com#?#[aria-label="Info"]:has-text(Switch to Chrome)
 developer.android.com#?#.devsite-snackbar-snack:has-text(Please help us)
+www.google.*##div[jsname="wA2P2b"][data-li=""]
 google.com#?#.Ryrdad:has-text(Please help us improve)
 google.com#?#[jscontroller="HCSvae"]:has-text(/Sign in to Google|Build Android apps faster/)
-google.com#?#div[jsname="wA2P2b"]:has-text(How helpful were the results)
 www.google.com#?#[aria-describedby="promo_desc_id"]:has-text(/Time for a new laptop|Gemini, |Choose Chrome|built by Google|Search differently|Cherchez différemment|Search just got easier|Try more ways|Switch to Chrome|Keep things dark/)
 ! Paid overlay nag
 youtube.com##.ytp-paid-content-overlay
@@ -3030,7 +3034,7 @@ annualreviews.org###article-back-to-top
 britishland.com###auto-top-link
 shameless.com###b2t
 news.tvbs.com.tw,whtop.com###back
-accessnow.org,al-watan.com,appdate.lk,brevzin.github.io,coinedcuisine.com,datamation.com,duhuliye.com,enotecapirovano.com,internetdrogist.nl,krdb.com,leakedzone.com,manhwabtt.cc,neue-impulse-verlag.de,partijvoorzeeland.nl,qatar-tribune.com,qualisseg.com.br,rbatv.com.br,sandordargo.com,sfu.ca,slocounty.ca.gov,tagliapasta.com,tfn.scot,volexity.com###back-to-top
+accessnow.org,al-watan.com,appdate.lk,brevzin.github.io,coinedcuisine.com,datamation.com,duhuliye.com,enotecapirovano.com,internetdrogist.nl,krdb.com,leakedzone.com,manhwabtt.cc,neue-impulse-verlag.de,partijvoorzeeland.nl,qatar-tribune.com,qualisseg.com.br,rbatv.com.br,sandordargo.com,sfu.ca,slocounty.ca.gov,sportando.basketball,tagliapasta.com,tfn.scot,volexity.com###back-to-top
 stoneberry.com###backTo
 bigislandnow.com,cen.acs.org,emaya.es,med.stanford.edu,mmoga.co.uk,mmoga.com,mmoga.de,mmoga.es,mmoga.fr,mmoga.se,toplegal.it,tsc.ca,vov.vn###backToTop
 cdw.com###backToTopWrapper
@@ -3046,6 +3050,7 @@ fda.gov###btn-top
 azernews.az,mmegi.bw###btn-up
 boomlive.in###button
 tasvideos.org###button-scrolltop
+ico.org.uk###button-top
 wahoofitness.com###dyTopButton
 topauto.co.za###eltd-back-to-top
 lamborghini-tractors.com###floatArrowUp
@@ -3112,7 +3117,7 @@ thegamecrater.com###to-top-wrap
 alsharqiya.com,amiventures.net,blog.westerndigital.com,confea.org.br,ebar.com,farooqkperogi.com,jqueryscript.net,lagruyere.ch,mieuxvivresante.fr,popmythology.com,pourquoidocteur.fr,stuttgarter-zeitung.de,theapplepost.com###toTop
 bd.com,call-reverse-lookup.com,chiamanti.it,directorio-telefonico.co,isocellitalia.it,kukasoitti.fi,lista-telefonica.pt,listaabonatilor.ro,najtinomer.ru,nieznanynumer.pl,number-lookup.co.uk,numberlookup.com.au,numeroinconnu.fr,numerosdetelefono.mx,numerostelefonicos.com.br,okanttelefonnummer.se,page-jaune.be,paginas-blancas.pe,phonenumbers.ie,quien-llama.cl,quien-llama.es,sarisayfalar.web.tr,telefonnyjdovidnyk.com.ua,telefonszamkereses.hu,telefonterror.co.no,telephone-directory.in,ukendtnummer.dk,vpnranks.com,vyhladavaniecisla.sk,vyhledatcislo.cz,wemgehoert.at,wemgehoert.ch,wemgehoert.de,white-pages.gr,zoeken-op-nummer.nl###top
 staradvertiser.com###top-anchor
-cricbuzz.com###top-btn
+bestcheck.de,cricbuzz.com###top-btn
 dollartree.com###top-button-block
 angelshack.co.za,avantishop.it,lacomunicazione.it,meganstarr.com,motorscribes.com,secretatlas.com###top-link
 fundrazr.com###top-scroller
@@ -3125,7 +3130,7 @@ coinlore.com###topbutton
 foodir.org,konradsblatt.de,paulinus.de,pestor.nl,ramirez.pt,trentinoinnovation.eu###topcontrol
 uva.nl###toplink
 routard.com###topscroll
-alalam.ir,aniwatch.to,aniwatchtv.to,consorzioautolinee.it,eboblack.com,formatoedu.com,ixosofficial.com,kapook.com,marinha.mil.br,maxcasa.com,murripatrizia.it,nilox.com,nomisma.it,publish0x.com,rstore.it,scarpescarpestore.com,sexcash.com,teenxy.com,u-news.com.ua###totop
+alalam.ir,aniwatch.to,aniwatchtv.to,consorzioautolinee.it,eboblack.com,formatoedu.com,ixosofficial.com,kapook.com,marinha.mil.br,maxcasa.com,murripatrizia.it,nilox.com,nomisma.it,publish0x.com,rstore.it,scarpescarpestore.com,sexcash.com,sharkrobot.com,teenxy.com,u-news.com.ua###totop
 altoadigelatte.com,cine974.com,europeanjournalists.org###up
 g2a.com###upPageToolbar
 fboomporn.com,xcafe.com###upper
@@ -3312,6 +3317,7 @@ bergsysteemafbouw.nl##.totoplink
 nftplazas.com##.trx_addons_scroll_to_top
 repuestosportatiles.es##.tvbottom-to-top
 nippon.com##.u-pagetop
+avforums.com##.u-scrollButtons
 news.arizona.edu##.ua-zen-back-to-top
 unige.ch##.unige-topnav
 atramentowka.com,latuaitalia.ru,link11.com,oil-land.pl,picardirebel.co.za,sklep-art-meb.pl,subscribe.ru,tv-soyuz.ru##.up
@@ -3772,6 +3778,9 @@ mainichi.jp##.tp-modal-open:style(overflow: auto !important; height: unset !impo
 mainichi.jp##.tp-modal:has(iframe[id^="offer_"][scrolling="no"][allowfullscreen="true"][style="overflow: hidden; background-color: transparent; border: 0px; width: 500px; height: 525px;"])
 mainichi.jp##.tp-modal:has(iframe[id^="offer_"][scrolling="no"][allowfullscreen="true"][style="overflow: hidden; background-color: transparent; border: 0px; width: 500px; height: 525px;"]) ~ .tp-backdrop
 mainichi.jp##.tp-scroll-prevented:style(overflow: auto !important; height: unset !important; touch-action: auto !important;)
+! votes.decisiondeskhq.com
+votes.decisiondeskhq.com##+js(set-local-storage-item, login-wall-triggered, 1)
+votes.decisiondeskhq.com##+js(set-session-storage-item, login-wall-dismissed, true)
 !------------------------Rules for international sites------------------------!
 ! *** easylist:fanboy-addon/fanboy_annoyance_international.txt ***
 ##.odkl-klass-stat
@@ -4100,6 +4109,7 @@ autoway.jp###cm_attend_popup
 sp.netkeiba.com###colorbox:has(#ModalLink > img[src^="https://cdn.netkeiba.com/img.sp/banner_image.php"])
 oh-my-teeth.com###cta-sticky-banner
 news.denfaminicogamer.jp###dfng-popup
+gigazine.net###donate_footer
 dandy-house.co.jp###entryprompt_area
 service.ocn.ne.jp###floatingBanner
 toptoon.jp###floatingBnr
@@ -4300,7 +4310,6 @@ milliyet.com.tr##.sticky
 @@||wurfl.io/wurfl.js$script,domain=smartcharts.net
 
 ! *** easylist:fanboy-addon/fanboy_annoyance_allowlist_general_hide.txt ***
-portalvirtualreality.ru#@##go-to-top
 mercopress.com#@##goToTop
 lecyclo.com#@##goto-top
 temaretik.com#@##scroll_to_top
