@@ -5808,3 +5808,6 @@ alpsgo.it##+js(trusted-set-cookie, dp_cookieconsent_status, '{"status":"approved
 
 ! https://github.com/uBlockOrigin/uAssets/issues/11450#issuecomment-6658335333
 profit.ro##+js(trusted-click-element, #onetrust-accept-btn-handler)
+
+! Brave webcompat cookie-notice fix for ticketshop.vanabbemuseum.nl — verified by replaying a WebPageReplay recording of the page with the rule applied: https://ticketshop.vanabbemuseum.nl
+ticketshop.vanabbemuseum.nl##+js(set-constant, syx.showColorBoxCookies, noopFunc)
