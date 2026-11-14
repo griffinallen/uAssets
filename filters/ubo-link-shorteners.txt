@@ -166,11 +166,6 @@ hit-films.com###btn6:style(display: block !important;)
 hit-films.com###btn6:others()
 
 ! https://v2links.me/MyahST77NaL
-utkarshonlinetest.com,financewada.com##+js(nano-sib, /.?/, *, 0.02)
-utkarshonlinetest.com,financewada.com##+js(rc, no_display)
-utkarshonlinetest.com,financewada.com##h4, .get_btn:others()
-utkarshonlinetest.com,financewada.com##.process, .txt_top
-utkarshonlinetest.com,financewada.com##.no_display:style(display: block!important; opacity: 1!important)
 v2links.me##.banner-page .container.links:style(height: fit-content! important;)
 v2links.me###footer
 
@@ -643,6 +638,8 @@ linegee.net,intercelestial.com,teknoasian.com,pahe.*##div:has(a[href*="antiadblo
 linegee.net,intercelestial.com,teknoasian.com,pahe.*##html:style(overflow: auto !important;)
 pahe.ink##+js(trusted-replace-outbound-text, decodeURIComponent, /^__x[0-9a-f]{7}$/, document)
 pahe.ink##+js(trusted-replace-outbound-text, decodeURIComponent, /^[0-9a-f]__$/)
+pahe.ink,intercelestial.com##+js(aeld, click, /(?=[\s\S]*(?:isTrusted|defaultPrevented|button))(?=[\s\S]*(?:ctrlKey|metaKey|shiftKey|altKey))(?=[\s\S]*(?:getAttribute|tagName))(?=[\s\S]*Date\s*\.\s*now)/, elements, document)
+/^https:\/\/pahe\.ink\/[-a-z0-9\/]+$/$script,1p,match-case
 
 ! Tpi group
 aii.sh,lnbzi.com,clksz.com,tpi.li,oii.la,srnky.com##+js(trusted-replace-outbound-text, decodeURIComponent, /^__x[0-9a-f]{7}$/, document)
@@ -661,6 +658,7 @@ clksz.com,tpi.li,oii.la,srnky.com##+js(no-xhr-if, /pagead2\.googlesyndication\.c
 clksz.com,tpi.li,oii.la,srnky.com##+js(acs, EventTarget.prototype.addEventListener, delete window)
 clksz.com,tpi.li,oii.la,srnky.com##+js(aeld, DOMContentLoaded, /checkAdblockUser|bypOnSyntheticClick/)
 clksz.com,tpi.li,oii.la,srnky.com##+js(nostif, checkAdblock)
+clksz.com,tpi.li,oii.la,srnky.com##+js(nosiif, -0x)
 clksz.com,tpi.li,oii.la,srnky.com##+js(set, blurred, false)
 clksz.com,tpi.li,oii.la,srnky.com##+js(rpnt, script, offsetHeight, offsetHeight+100)
 clksz.com,tpi.li,oii.la,srnky.com##a[href][target="_blank"]
@@ -966,14 +964,14 @@ sharclub.in,main.sportswordz.com,wblaxmibhandar.com##+js(rpnt, script, timeLeft 
 lksfy.com##[href="https://telegram.me/linkshortify"] > .button-image
 
 ! https://linkjust.com/6epe7m0l6m
-quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,gold-24.net,forexrw7.com##+js(noeval-if, /chp_?ad/)
-quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,gold-24.net,forexrw7.com##.btn-success:style(display: block !important;)
-quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,gold-24.net,forexrw7.com##+js(nano-stb, /.?/, *, 0.001)
-quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,gold-24.net,forexrw7.com##+js(nano-sib, /.?/, *, 0.001)
-quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,gold-24.net,forexrw7.com##.btn-success, [id^="next"], [id^="final"]:others()
+quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,forexrw7.com##+js(noeval-if, /chp_?ad/)
+quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,forexrw7.com##.btn-success:style(display: block !important;)
+quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,forexrw7.com##+js(nano-stb, /.?/, *, 0.001)
+quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,forexrw7.com##+js(nano-sib, /.?/, *, 0.001)
+quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,forexrw7.com##.btn-success, [id^="next"], [id^="final"]:others()
 ! Auto click
-quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,gold-24.net,forexrw7.com##+js(trusted-click-element, '1000, #next-timer-btn > .btn-success, 600, #mid-progress-wrapper > .btn-success, 1300, #final-nextbutton', 3500)
-quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,gold-24.net,forexrw7.com##+js(trusted-click-element, #next-link-wrapper > .btn-success, , 1600)
+quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,forexrw7.com##+js(trusted-click-element, '1000, #next-timer-btn > .btn-success, 600, #mid-progress-wrapper > .btn-success, 1300, #final-nextbutton', 3500)
+quest.to-travel.net,yjiur.xyz,journey.to-travel.net,whatgame.xyz,forexrw7.com##+js(trusted-click-element, #next-link-wrapper > .btn-success, , 1600)
 ||primepropertynow.com^$domain=linkjust.com
 linkjust.com##+js(set, blurred, false)
 
@@ -1036,11 +1034,10 @@ tutwuri.id##+js(nano-sib)
 ! https://github.com/uBlockOrigin/uAssets/issues/9760
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112330
 ! https://github.com/AdguardTeam/AdguardFilters/issues/110385
-downfile.site##+js(rmnt, script, deblocker)
-! azmath.info,azsoft.*,downfile.site,downphanmem.com,expertvn.com,memangbau.com,trangchu.news,aztravels.net##+js(set, count, 0)
-azmath.info,azsoft.*,downfile.site,expertvn.com,trangchu.news##+js(aopr, SMart1)
-azmath.info,azsoft.*,downfile.site,expertvn.com,trangchu.news##+js(noeval-if, chp_ad)
-azmath.info,azsoft.*,downfile.site,expertvn.com,trangchu.news##+js(aeld, DOMContentLoaded, document.documentElement.lang.toLowerCase)
+! azmath.info,azsoft.*,downphanmem.com,expertvn.com,aztravels.net##+js(set, count, 0)
+azmath.info,azsoft.*,expertvn.com##+js(aopr, SMart1)
+azmath.info,azsoft.*,expertvn.com##+js(noeval-if, chp_ad)
+azmath.info,azsoft.*,expertvn.com##+js(aeld, DOMContentLoaded, document.documentElement.lang.toLowerCase)
 expertvn.com##+js(rmnt, script, deblocker)
 trangchu.news##+js(rmnt, script, deblocker)
 trangchu.news##+js(no-xhr-if, /doubleclick|googlesyndication/)
@@ -1049,8 +1046,8 @@ trangchu.news##+js(no-xhr-if, /doubleclick|googlesyndication/)
 @@||expertvn.com^$ghide
 *$script,3p,denyallow=bootstrapcdn.com|cloudflare.com|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com,domain=expertvn.com
 ||monetiza.co^$3p
-||vidcrunch.com^$domain=aztravels.net|downfile.site
-@@*$ghide,domain=aztravels.net|downfile.site
+||vidcrunch.com^$domain=aztravels.net
+@@*$ghide,domain=aztravels.net
 *$image,domain=app.trangchu.news|azmath.info,redirect-rule=1x1.gif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24199
@@ -1817,7 +1814,7 @@ fuckingfast.*##+js(remove-node-text, script, '"+"')
 1cloudfile.com,akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,cg-gamespc.net,datavaults.co,devuploads.com,dodi-repacks.site,file-me.top,file-upload.org,filemirage.com,fuckingfast.*,game-repack.site,gamedrive.*,getfreegames.net,go.zovo.ink,koramaup.com,mirrored.to,multiup.io,nathanmichaelphoto.com,ranoz.gg,repack-games.com,reloadedsteam.com,rootz.so,steam-repacks.net,steamgg.net,steamunderground.net,swiftuploads.com,torupload.com,up-4ever.net,uploadrar.*,usersdrive.com,vik1ngfile.site,worldofpcgames.com,zeilink.net,zovo2.top,zpaste.net,fileq.net,zovo.*##+js(nowoif, .cfd)
 1cloudfile.com,akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,cg-gamespc.net,datavaults.co,devuploads.com,dodi-repacks.site,file-me.top,file-upload.org,filemirage.com,fuckingfast.*,game-repack.site,gamedrive.*,getfreegames.net,go.zovo.ink,koramaup.com,mirrored.to,multiup.io,nathanmichaelphoto.com,ranoz.gg,repack-games.com,reloadedsteam.com,rootz.so,steam-repacks.net,steamgg.net,steamunderground.net,swiftuploads.com,torupload.com,up-4ever.net,uploadrar.*,usersdrive.com,vik1ngfile.site,worldofpcgames.com,zeilink.net,zovo2.top,zpaste.net,fileq.net,zovo.*##+js(rmnt, script, /"\+"g|"\+"'a|self\.__next.*?\,typeof document|self\.__next&&|\|\|self\.__next\,\(|\("\+"t|'\+'F|0\|\|window|\}\)\(\)\,typeof|'\+'s|this\['F.*\('\+'"|\)\)"'\)\(\);\(\(\)\=>/g, excludes, /^self\.__next_f\.push/)
 ||dev^$3p,xhr,stylesheet,domain=1cloudfile.com|akirabox.com|akirabox.to|bowfile.com|buzzheavier.com|bzzhr.co|bzzhr.to|cg-gamespc.net|datavaults.co|devuploads.com|dodi-repacks.site|file-me.top|file-upload.org|filemirage.com|fuckingfast.*|game-repack.site|gamedrive.*|getfreegames.net|go.zovo.ink|koramaup.com|mirrored.to|multiup.io|nathanmichaelphoto.com|ranoz.gg|repack-games.com|reloadedsteam.com|rootz.so|steam-repacks.net|steamgg.net|steamunderground.net|swiftuploads.com|torupload.com|up-4ever.net|uploadrar.*|usersdrive.com|vik1ngfile.site|worldofpcgames.com|zeilink.net|zovo2.top|zpaste.net|fileq.net|zovo.ink|zovo.to
-*$3p,popup,to=~com|~io|~net|~org|~to|~co|~mixdrop.ag|~vik1ngfile.site,from=1cloudfile.com|akirabox.com|akirabox.to|bowfile.com|buzzheavier.com|bzzhr.co|bzzhr.to|cg-gamespc.net|datavaults.co|devuploads.com|dodi-repacks.site|file-me.top|file-upload.org|filemirage.com|fuckingfast.*|game-repack.site|gamedrive.*|getfreegames.net|go.zovo.ink|koramaup.com|mirrored.to|multiup.io|nathanmichaelphoto.com|ranoz.gg|repack-games.com|reloadedsteam.com|rootz.so|steam-repacks.net|steamgg.net|steamunderground.net|swiftuploads.com|torupload.com|up-4ever.net|uploadrar.*|usersdrive.com|vik1ngfile.site|worldofpcgames.com|zeilink.net|zovo2.top|zpaste.net|fileq.net|zovo.ink|zovo.to
+*$3p,popup,to=~com|~io|~net|~org|~to|~co|~mixdrop.ag|~vik1ngfile.site|~filecrypt.cc,from=1cloudfile.com|akirabox.com|akirabox.to|bowfile.com|buzzheavier.com|bzzhr.co|bzzhr.to|cg-gamespc.net|datavaults.co|devuploads.com|dodi-repacks.site|file-me.top|file-upload.org|filemirage.com|fuckingfast.*|game-repack.site|gamedrive.*|getfreegames.net|go.zovo.ink|koramaup.com|mirrored.to|multiup.io|nathanmichaelphoto.com|ranoz.gg|repack-games.com|reloadedsteam.com|rootz.so|steam-repacks.net|steamgg.net|steamunderground.net|swiftuploads.com|torupload.com|up-4ever.net|uploadrar.*|usersdrive.com|vik1ngfile.site|worldofpcgames.com|zeilink.net|zovo2.top|zpaste.net|fileq.net|zovo.ink|zovo.to
 /^https:\/\/[a-z0-9]+\.[a-z0-9]+\.[a-z][a-z][a-z]+\/\?&?[a-z]+=[a-zA-Z0-9+\/%=:_-]+[$&]/$3p,popup,domain=gg|ink|site|so|to|top
 /^https:\/\/[a-z0-9]+\.[a-z0-9]+\.[a-z][a-z][a-z]+\/\?&?[a-z]+=[a-zA-Z0-9+\/%=:_-]+[$&]/$3p,popup,match-case,to=cfd|cyou|sbs|shop|space|website
 /^https:\/\/link[0-9]+\.[a-z0-9]+\.[a-z][a-z][a-z]+\/\?&?data=[a-zA-Z0-9+\/%=:_-]+[$&]/$3p,popup,match-case,to=~com|~edu|~gov|~net|~org

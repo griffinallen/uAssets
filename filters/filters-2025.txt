@@ -1574,8 +1574,13 @@ netfree.cc##+js(nowoif, _blank, 20)
 ! https://github.com/uBlockOrigin/uAssets/issues/34583
 omegascans.org##+js(acs, Date.prototype.toISOString, wpadmngr.com)
 omegascans.org##a[href*="?"][target="_blank"] img
+omegascans.org##.ai-top-bar
+omegascans.org##section div.flex-row.rounded.overflow-hidden.relative:has(iframe)
+##.flex a[href^="https://tt.culinar9sync.com/"]
 ||omegascans.org/*x*_*.gif^$image,1p
 ||omegascans.org/ads.js
+||svc.*/api/iframe?placement=$frame,3p
+||velvetloom.net^
 ||traffinity.pro^
 
 ! https://jav.sb popup
@@ -1666,6 +1671,8 @@ babaktv.com##+js(rmnt, script, ai_adb)
 babaktv.com##+js(nowoif)
 babaktv.com##.code-block
 babaktv.com##.vidoverlay
+||babaktv.com/redirect/js/*.js?v=$script
+||babaktv.com/redirect/ads/
 
 ! https://github.com/uBlockOrigin/uAssets/issues/27843
 opensubtitles.com##+js(set, extInstalled, true)
@@ -2293,7 +2300,7 @@ condorsoft.co##+js(no-xhr-if, googlesyndication)
 gsmarena.com##div.align-center.justify-center.flex-column.d-flex:has(.ad-c-label)
 gsmarena.com###opt300x250
 gsmarena.com##.ad-label
-gsmarena.com##+js(aeld, DOMContentLoaded, /doubleclick|atob|return new Promise|aHR0c|String\.fromCharCode|window\[/)
+gsmarena.com##+js(aeld, DOMContentLoaded, /doubleclick|atob|return new Promise|aHR0c|String\.fromCharCode|window\[|headers|offsetHeight\?/)
 gsmarena.com##+js(remove-cookie, /DeviceID|lpe/)
 gsmarena.com##+js(no-fetch-if, doubleclick)
 
@@ -2417,6 +2424,7 @@ sextb.*>>##+js(nowoif)
 sextb.*>>##+js(trusted-override-element-method, HTMLAnchorElement.prototype.click, a[href][target="_blank"])
 sextb.net##.right:has(script)
 ||sextb.net/js/brs.js$script
+||sextb.*/js/popup.js
 /assets/jquery/*.js?type=adult^$script,1p
 /assets/jquery/static.js?type=mainstream^$script,1p
 /assets/jquery/hg-function.js?$script
@@ -2429,6 +2437,7 @@ f4scdn.com##+js(nowoif, _blank)
 ||affectionatestorage.com^
 ! https://www.reddit.com/r/uBlockOrigin/comments/1ogmw3q/sextbnet_nsfw_forces_you_to_disable_ubo/
 sextb.*#@#.ad-placeholder:not(#detect, #detect_ad_empire, #filter_ads_by_classname, .adsbox)
+sextb.*##+js(trusted-replace-argument, HTMLHtmlElement.prototype.hasAttribute, 0, json:"lang", condition, data-adfree)
 ! https://github.com/uBlockOrigin/uAssets/issues/33542
 audinifer.com,vibuxer.com##+js(rmnt, script, window.open)
 audinifer.com,vibuxer.com##body > div[style*="2147483647"]
@@ -3616,9 +3625,6 @@ gamesfree.com##div#flashgame:remove-attr(style)
 yelp.com##+js(json-edit, ..searchResults.*[?.isAd==true])
 yelp.com##+js(json-edit, ..mainContentComponentsListProps.*[?.isAd==true])
 yelp.com##+js(json-edit-fetch-response, ..mainContentComponentsListProps.*[?.isAd==true], propsToMatch, /search/snippet?)
-
-! 9filmyzilla.skin antiadb
-9filmyzilla.*##+js(noeval-if, adsbygoogle)
 
 ! xopenload.net => players - popups
 player4me.vip,seekplayer.vip##+js(nowoif)

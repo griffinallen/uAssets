@@ -307,6 +307,7 @@ howtoremove.guide###gray_de
 ||fortuneadvert.com^$all
 ||lalielynaualish.com^$all
 .com/go/*?clickid=$doc
+/c1/*?externalId=*&cv1=$doc
 
 ! hacked and abused for redirect
 ||clicks.affstrack.com^
@@ -637,6 +638,10 @@ howtoremove.guide###gray_de
 ||projecthygieia.com^$all
 ||iridia.me^$doc
 
+! https://github.com/uBlockOrigin/uAssets/issues/35239
+||nexusmops.com^$doc
+||nexusmcds.com^$doc
+
 ! fake software updaters /redirections
 ||atnpx.com^
 ||webpushcloud.top^
@@ -672,7 +677,8 @@ howtoremove.guide###gray_de
 ||messagesafe.net^$all
 ||msgsafe.net^$all
 ||best4fuck.com^$all
-! https://github.com/uBlockOrigin/uAssets/issues/26047
+! https://github.com/uBlockOrigin/uAssets/issues/35238
+||stearndb.info^$all
 
 ! https://www.huorong.cn/info/1531309921141.html
 ||kuaizip.com^$all
@@ -1607,6 +1613,8 @@ cracksmid.com##div[style=""] > center > center
 ||galanzmotzjp.com^$all
 ! https://x.com/masaomi346/status/2117779362707886178
 ||downioads-japan.com^$all
+! https://x.com/masaomi346/status/2118996613377212533
+||cb-customa.com^$all
 
 ! scam sites
 ||webuzz.me^$doc
@@ -3366,6 +3374,10 @@ r2.dev##body > .main-wrapper > .main-content:has(> #checkbox-window.checkbox-win
 ! https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-10-31-Romulus-Loader-spread-via-ClickFix-technique.txt
 /^https:\/\/sites\.google\.com\/view\/antibot[0-9]+\b/$doc,match-case
 
+! https://github.com/uBlockOrigin/uAssets/issues/35302
+||browse-cloud.codes^$all
+||encodelp.com^$all
+
 ! !SECTION: ClickFix
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/12ng4o8/
@@ -4582,7 +4594,7 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ! https://www.virustotal.com/gui/url/3cfd2e05f7e6129a6278d7f0ab0bce05d021cdf47407f51b5dbe6d975eb5ff56
 ! https://github.com/uBlockOrigin/uAssets/issues/33993
 ! https://github.com/uBlockOrigin/uAssets/issues/34059
-||steamcommunity.$doc,to=~steamcommunity.com|~steamcommunity.ai|~steamcommunity.gg|~steamcommunity.rocks|~steamcommunity.tips
+||steamcommunity.$doc,to=~steamcommunity.com|~steamcommunity.ai|~steamcommunity.cl|~steamcommunity.gg|~steamcommunity.rocks|~steamcommunity.tips
 
 ! pubg
 ||register-turnamen.free.nf^$all
@@ -5832,8 +5844,9 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 ! https://www.reddit.com/r/antivirus/comments/1re2ox3/im_kinda_dumb_with_technology_in_general_should_i/
 ||kexornero.co.in^$all
 ! https://github.com/uBlockOrigin/uAssets/issues/33755
+! https://github.com/uBlockOrigin/uAssets/issues/35295
 !#if !ext_ubol
-/^https?:\/\/[a-z0-9]{10,}\.[a-z]{9,}\.co\.in\//$all,to=co.in|~unitybank.co.in
+! /^https?:\/\/[a-z0-9]{10,}\.[a-z]{9,}\.co\.in\//$all,to=co.in|~unitybank.co.in
 !#endif
 ! https://www.reddit.com/r/antivirus/comments/1rg9tbc/wife_computer_suddenly/
 ||vironexta.com^$all
@@ -5901,8 +5914,9 @@ rapidkil.com.au##+js(aost, XMLHttpRequest, /wp-content)
 ! https://github.com/uBlockOrigin/uAssets/issues/27109
 ! https://github.com/uBlockOrigin/uAssets/issues/27172
 ! https://github.com/uBlockOrigin/uAssets/issues/27583
-||sharedrop.io^$all
-||snapdrop.net^$all
+! https://github.com/uBlockOrigin/uAssets/issues/35333
+! ||sharedrop.io^$all
+! ||snapdrop.net^$all
 
 ! https://cyble.com/blog/deepseeks-growing-influence-surge-frauds-phishing-attacks/
 ||usadeepseek.com^$all
@@ -6996,6 +7010,7 @@ top##body > center + .A + .post
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34648
 ||koboldcpp.com^$all
+||koboldcpp.cc^$all
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34589
 msm-wroclaw.pl##+js(noeval-if, _0x)
@@ -7033,6 +7048,7 @@ msm-wroclaw.pl##+js(noeval-if, _0x)
 
 ! https://disconinja.hatenablog.com/entry/2026/11/03/230647
 ||rivo.vin/rivo-stealer/
+||rivo.vin/vi|
 
 ! https://github.com/uBlockOrigin/uAssets/issues/35202
 ! https://www.virustotal.com/gui/file/a216debace43f80a4d28d73c4e1c8b492669f2107c6ebb2eebcfb1ab2b3ec16d
@@ -7044,3 +7060,11 @@ msm-wroclaw.pl##+js(noeval-if, _0x)
 
 ! https://www.reddit.com/r/Scams/comments/1xo5pr0/heads_up_fake_aldi_website_phishing_scam_spotted/
 ||pondmart.shop^$all
+
+! https://github.com/hagezi/dns-blocklists/issues/12288
+||4kwallpapers.top^$all
+||pcsofts.site^$all
+||gover.top^$all
+
+! https://github.com/uBlockOrigin/uAssets/issues/35345
+||sumatrapdf.org^$all

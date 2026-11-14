@@ -1356,6 +1356,7 @@
 ||chan.sankakucomplex.com/javascripts/sp/s-new.js
 ||chemistwarehouse.com.au/edm_collector.html
 ||chimpstatic.com/mcjs-connected/$script,domain=stilldrinking.org
+||dragonforms.com^$domain=freightwaves.com
 ||dw.com/webapi/iframes/widget/
 ||electricfencing.co.uk/prnewsletterpopup/
 ||ewnews.com/wp-content/themes/dw-focus/newsletter.png
@@ -2050,6 +2051,7 @@ aibusiness.com,gamedeveloper.com,itprotoday.com##.SubscribeBannerTopicPage
 riverbender.com##.SubscribeBox
 patch.com##.SubscribeCTABlurb_SubscribeCTABlurb__M_Azu
 nordvpn.com##.SubscribeSection
+timesnownews.com##.SubscribeWithEmail_subscribe-body__UQfW_
 otcmarkets.com##.Subscribe__Subscribe___2hrcO
 hoorayteams.com##.Subscribe_subscribe__fsS5P
 naturalnews.com##.Subscription-Article-Box
@@ -2066,7 +2068,6 @@ bustle.com##.VrW.j1J
 wbur.org##.WallOfLinks_actions__cAUTE
 cnbc.com##.WildcardEmbed-wrapper
 latimes.com##.\@container\/newsletter-module
-timesnownews.com##._37K4.RUE6
 80.lv##._3Gr3h
 gulfnews.com##._4EXSh
 thelogic.co##.__form-wrapper
@@ -2214,6 +2215,7 @@ mypenndentist.org##.bg-navylightblue.padding-v20
 allaboutcircuits.com,bobvila.com##.bg-newsletter
 biblegateway.com##.bg-popup-root
 sciencealert.com##.bg-sciencealert-yellow
+begiant.ca##.bg-surface-cream
 axios.com##.bg-tertiary.gtmView
 thebudgetsavvybride.com##.bg-turquoise-500
 thepostmillennial.com##.bg-warning
@@ -2831,7 +2833,7 @@ grist.org##.hp-topper-newsletter
 citizensforethics.org##.hp_signup__container
 money.com##.hpv2-newsletter
 topgear.com##.hrWTog
-lbbonline.com##.hs-cta-embed
+agweb.com,lbbonline.com##.hs-cta-embed
 currentaffairs.org##.hs-cta-simple-placeholder
 thehustle.co##.hs-cta-wrapper
 koi.ai##.hs-form_inside-article
@@ -2922,7 +2924,7 @@ qz.com##.kHmXgL
 christinacooks.com##.kadence-conversion-wrap
 joanwestenberg.com,ppc.land##.kg-cta-card
 the-londoner.co.uk##.kg-cta-content
-alsterrunde.com,beautifulpublicdata.com,codereliant.io,evinfocus.com,gardinerbryant.com,gkogan.co,leicester.news,livpost.co.uk,micahflee.com,newslttrs.com,overkill.wtf,oxfordclarion.uk,ppc.land,scarletink.com,simone.org##.kg-signup-card
+alsterrunde.com,beautifulpublicdata.com,codereliant.io,evinfocus.com,gardinerbryant.com,gkogan.co,leicester.news,livpost.co.uk,micahflee.com,newslttrs.com,overkill.wtf,oxfordclarion.uk,ppc.land,scarletink.com,simone.org,this.weekinsecurity.com##.kg-signup-card
 disconnect.blog,the-londoner.co.uk##.kg-signup-card-content
 digitalocean.com##.khfYvn
 betakit.com,govee.com##.kl-private-reset-css-Xuajs1.needsclick
@@ -3002,7 +3004,6 @@ psu.edu##.mailinglist-form
 ndtvprofit.com##.mailmodo-news-letter-m__card-wrapper__o-Dst
 niemanlab.org##.mailmunch-overlay
 niemanlab.org##.mailmunch-popover
-firethering.com##.mailpoet_form
 consummateathlete.com,pstribune.com##.mailpoet_form_popup_overlay
 leadership.ng,openculture.com##.mailster-form
 freebeacon.com##.main-container > .container > .block > .w-full > .border-blue2
@@ -4434,7 +4435,7 @@ edmontonjournal.com##.newsletter-widget
 !! .subscription-widget-wrap
 hamiltonnolan.com,whytryai.com##.subscription-widget-wrap
 !! .mailpoet_form
-broadcastnews.gr,chipsandcheese.com,chipwits.com,consummateathlete.com,etfworld.co.uk,europeantimes.news,exputer.com,hedgenordic.com,logitheque.com,mixed-news.com,notionthings.com,phonandroid.com,portalpuentealto.cl,pstribune.com,sardiniapost.it,scienceclock.com,slaynews.com,tech4gamers.com,thedesk.net,theklaxon.com.au,tomshardware.fr##.mailpoet_form
+broadcastnews.gr,chipsandcheese.com,chipwits.com,consummateathlete.com,etfworld.co.uk,europeantimes.news,exputer.com,firethering.com,hedgenordic.com,logitheque.com,lpeproject.org,mixed-news.com,notionthings.com,phonandroid.com,portalpuentealto.cl,pstribune.com,sardiniapost.it,scienceclock.com,slaynews.com,tech4gamers.com,thedesk.net,theklaxon.com.au,tomshardware.fr##.mailpoet_form
 !! signUpForm_
 fastxmovie.com##div[class^="signUpForm_"]
 !! .bottom-0.fixed
@@ -5164,6 +5165,9 @@ techpolicy.press##.ml-webforms-popup-overlay
 techpolicy.press##body:style(overflow: auto !important; position: initial !important;)
 ! Signup https://github.com/uBlockOrigin/uAssets/issues/35166
 gtaservers.org##+js(set-local-storage-item, np-west-signup-seen-2, 1)
+! begiant.ca
+begiant.ca#?#.z-1200.inset-0.fixed:has-text(Get a free book!)
+begiant.ca##body:style(overflow: auto !important; position: initial !important;)
 ! niemanlab.org
 niemanlab.org###nlep
 niemanlab.org##body:style(overflow: auto !important; position: initial !important;)
@@ -5188,6 +5192,8 @@ core.app##+js(set-local-storage-item, show-email-intake-form, false)
 ! lazycatkitchen.com
 lazycatkitchen.com##.wppopups-whole
 lazycatkitchen.com##body:style(overflow: auto !important; position: initial !important;)
+! culturealberta.com
+culturealberta.com##+js(set-session-storage-item, newsletter_shown, true)
 ! campaignlive.co.uk popup https://github.com/uBlockOrigin/uAssets/issues/29102
 campaignlive.co.uk##+js(set-session-storage-item, articleModalShown, true)
 ! similarweb.com login wall
@@ -6418,6 +6424,7 @@ komerso.pl##.newsletter-post
 ! Portuguese
 metropoles.com###m-newsletter
 neofeed.com.br###modalNewsletter
+ndmais.com.br###ndmais-newsletter-widget
 publico.pt###newsletter-subscription
 a12.com##.LeadNewsletterA
 infomoney.com.br##.ad-aside
