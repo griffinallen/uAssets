@@ -611,6 +611,9 @@ kaa.lt##+js(set, KAA.state.popads, undefined)
 kaa.lt##+js(aeld, , /popMagic|shield/)
 kaa.lt##+js(nosiif, enforceVideoShield)
 kaa.lt##+js(nowoif, _blank)
+kaa.lt##+js(aost, document.createElement, startOrchestrator)
+kaa.lt###fullscreen-ad-trap
+||kaa.lt/*x*.html^$frame,1p
 ||xgamehub.net/kaa/
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1rbebkx/adblock_detection_on_httpsfilmpornoitalianoorg/
@@ -2467,3 +2470,25 @@ fmodpro.com##body:style(overflow:auto !important)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/35332
 ||electronicrepairguide.com/swfobject.js^
+
+! https://github.com/uBlockOrigin/uAssets/issues/35350
+||blackoutcomics.com/build/assets/adblock-wall-
+
+! https://github.com/uBlockOrigin/uAssets/issues/35354
+elektrotanya.com##+js(rmnt, script, !(window.adsbygoogle)
+elektrotanya.com##.ad_kontener
+elektrotanya.com###ad-header4
+elektrotanya.com###ad-header3
+
+! https://github.com/uBlockOrigin/uAssets/issues/35359
+madamnazar.io##+js(no-fetch-if, method:HEAD)
+madamnazar.io##+js(nostif, /offsetHeight|error"/)
+
+! https://github.com/uBlockOrigin/uAssets/issues/35355
+applescoop.org##+js(rmnt, script, /probe|adblock|__asPicks/i)
+applescoop.org##.story-content .ad
+applescoop.org##.as-ad-rail
+applescoop.org##.as-ad
+
+! https://github.com/uBlockOrigin/uAssets/issues/35383
+||laviola.it/jaqisharam.js

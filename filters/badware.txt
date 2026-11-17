@@ -1615,6 +1615,8 @@ cracksmid.com##div[style=""] > center > center
 ||downioads-japan.com^$all
 ! https://x.com/masaomi346/status/2118996613377212533
 ||cb-customa.com^$all
+! https://x.com/masaomi346/status/2122161201132277825
+||googlea.eu.cc^$all
 
 ! scam sites
 ||webuzz.me^$doc
@@ -3377,6 +3379,13 @@ r2.dev##body > .main-wrapper > .main-content:has(> #checkbox-window.checkbox-win
 ! https://github.com/uBlockOrigin/uAssets/issues/35302
 ||browse-cloud.codes^$all
 ||encodelp.com^$all
+
+! https://socradar.io/blog/xaocmail-clickfix-phantom53-havox-america-asia-europe/
+||securedoc.*.workers.dev^$doc
+##body > #rcOverlay > #rcCard
+
+! https://scanmalware.com/hunts/289
+||microsoft-winupdate.com^$all
 
 ! !SECTION: ClickFix
 
@@ -6826,6 +6835,7 @@ top##body > center + .A + .post
 ||imtolenplex.com^$all
 ||immanitys.com^$all
 ||tagesschau.tech^$doc
+||gmai.com^$all
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/235108
 ||shuru-baidu.com.cn^$all
@@ -7068,3 +7078,9 @@ msm-wroclaw.pl##+js(noeval-if, _0x)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/35345
 ||sumatrapdf.org^$all
+
+! https://github.com/uBlockOrigin/uAssets/pull/35378
+! https://bazaar.abuse.ch/browse/tag/kurdishmyth/
+/^https?:\/\/cdn\.discordapp\.com\/[^?]*\/(?:[A-Z][a-z]+SMP.zip|[A-Za-z_]+Mod.zip)(?:\?|$)/$document,match-case
+/^https?:\/\/cdn\.discordapp\.com\/[^?]*\.(?:jar|mrpack|litemod|mcpack|mcaddon)(?:\?|$)/$document
+

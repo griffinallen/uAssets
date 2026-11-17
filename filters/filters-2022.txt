@@ -3433,9 +3433,11 @@ chip.de##div[class*="ad-slot" i]
 chip.de##div[id*="AdSlot"]
 chip.de##.ad-listing
 chip.de##.product__top-aside
+chip.de##.avast-box
+chip.de##.ae-banner
 chip.de##.RUC-DownloadButton-Wrap:has(> span:has-text(/^ANZEIGE$/))
-chip.de##div:not([id], [class]):has(> section:only-child > div:only-child > a[href^="https://www.chip.de/deals/schnaeppchen/"]:only-child > img[src^="https://quadro.burda-forward.de/"]:only-child)
-chip.de##div:not([id], [class]):has(> section:only-child > a[href^="https://www.chip.de/deals/schnaeppchen/"]:only-child > img[src^="https://quadro.burda-forward.de/"]:only-child)
+chip.de##div:not([id], [class]):has(> div:only-child > div:only-child > a[href^="https://www.chip.de/test-kaufberatung/"]:only-child > img[src^="https://quadro.burda-forward.de/"]:only-child)
+chip.de##div:not([id], [class]):has(> div:only-child > a[href^="https://www.chip.de/test-kaufberatung/"]:only-child > img[src^="https://quadro.burda-forward.de/"]:only-child)
 ! restore speed (the anti adblock script causing lag spikes)
 !#if cap_html_filtering
 www.chip.de##^script:has-text(/\, [0-9]{3}\)\]\; var /)
@@ -3648,6 +3650,10 @@ ios.codevn.net##+js(nosiif, offsetHeight)
 ! https://github.com/uBlockOrigin/uAssets/issues/16076
 @@||redketchup.io^$script,1p
 redketchup.io##+js(rpnt, script, ?30:0, ?0:0)
+redketchup.io##+js(trusted-set, document.visibilityState, json:"visible")
+redketchup.io##+js(set, googletag.cmd.push, noopFunc)
+redketchup.io##+js(nostif, /googletag\.pubads|\/PreBid\.js/)
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=noopjs:6,domain=redketchup.io
 redketchup.io##.potato_modal
 
 ! https://en.bestfonts.pro/font/download/5ddec54abc00f605b3d2d2b1 timer
